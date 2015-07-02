@@ -14,7 +14,7 @@ body {
   margin-top: 30px;
 }
 section {
-  padding: 50px 0;
+  margin: 50px;
 }
 .bg-gray {
   background-color: #f5f5f5;
@@ -155,6 +155,9 @@ hr.right {
 }
 hr.colored {
   border-color: #3aaa35;
+}
+hr.black {
+  border-color: black;
 }
 @media (min-width: 768px) {
   hr {
@@ -331,6 +334,19 @@ header .intro-quote {
   color: white;
   top: 40%;
 }
+header .under-construction {
+  color: white;
+  width: 100%;
+  text-align: center;
+  bottom: 20%;
+  position: absolute;
+}
+header hr.construction {
+  border-color: white;
+  border-top: none;
+  border-bottom: 2px solid white;
+  max-width: 200px;
+}
 header .brand-name {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 55px;
@@ -346,14 +362,14 @@ header .brand-name-subtext {
   /*font-weight: 200;*/
 }
 header img {
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 header .scroll-down {
   position: absolute;
   width: 100%;
-  bottom: 20%;
+  bottom: 10%;
   text-align: center;
 }
 header .scroll-down .btn {
@@ -440,8 +456,8 @@ header .btn-play .right {
     width: 300px;
   }
   header img {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 500px;
+    max-height: 500px;
   }
 }
 @media (min-width: 1025px) {
