@@ -423,6 +423,42 @@ header .intro-quote {
   color: white;
   top: 40%;
 }
+header#thanks .intro-quote{
+  position: relative;
+  text-align: center;
+  color: white;
+  top: 30%;
+}
+header#thanks img {
+  max-width: 300px;
+  max-height: 300px;
+  position: initial;
+  margin: 10%;
+}
+header#thanks button {
+
+  background-color: transparent;
+  color: white;
+  border: 2px solid white ;
+  width: 20%;
+}
+header#thanks a {
+  color: white;
+}
+header .under-construction {
+  color: white;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin-bottom: 70px;
+  font-size: 30px;
+}
+header hr.construction {
+  border-color: white;
+  border-top: none;
+  border-bottom: 2px solid white;
+  max-width: 200px;
+}
 header .brand-name {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 55px;
