@@ -173,13 +173,12 @@
 
     // Home switcher
     $(document).ready(function(){
-      // function change_background( new_image_source ) {
-      //   var myimage = $( '#header1' );
-      //   myimage.css( 'background-image', new_image_source );
-      // };
-      // setTimeout( function () {
-      //   change_background( "url('assets/img/visuels/foule-filtre.png')" );
-      // }, 3000);
+
+      $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+          event.preventDefault();
+          $(this).ekkoLightbox();
+      });
+
 
       // window.setInterval(function(){
       //   window.setTimeout(function(){
@@ -216,30 +215,56 @@
 
       // Collapse Manifeste
 
-      $(function() {
-        $('div.expandCollapseContent').hide();
-        $('#placeHolder').hide();
-        $('.expandCollapse').hover(function() {
-          var classe = '#' + this.id + 'Collapse';
-          if ($('#placeHolder').is(':visible') ) {
-            $('#placeHolder').slideUp(500);
-          };
-          if ($('#placeHolder').text() !== $(classe).text()){
-            $('#placeHolder').slideUp(500, function() {
-              $('#placeHolder').html($(classe).html());
-              $('#placeHolder').slideDown(500);
-            });
-          }else if (!$('#placeHolder').is(':visible')) {
-            $('#placeHolder').slideDown(500);
-          };
-        });
+      // $(function() {
+      //   $('div.expandCollapseContent').hide();
+      //   $('#placeHolder').hide();
+      //   $('.expandCollapse').hover(function() {
+      //     var classe = '#' + this.id + 'Collapse';
+      //     if ($('#placeHolder').is(':visible') ) {
+      //       $('#placeHolder').slideUp(500);
+      //     };
+      //     if ($('#placeHolder').text() !== $(classe).text()){
+      //       $('#placeHolder').slideUp(500, function() {
+      //         $('#placeHolder').html($(classe).html());
+      //         $('#placeHolder').slideDown(500);
+      //       });
+      //     }else if (!$('#placeHolder').is(':visible')) {
+      //       $('#placeHolder').slideDown(500);
+      //     };
+      //   });
+      // });
+
+      $(document).bind("scroll.myScroll", function(){
+          if ($(document).scrollTop() >= $('#chiffres').offset().top - 100) {
+            $('.timer').countTo({onComplete: function () {
+              if (jQuery(this).hasClass("percent")) {
+                jQuery(this).append("%");
+              };
+            }});
+            $(document).unbind('.myScroll');
+          }
       });
 
+
+
+
+
+
       $('.caption-content').hide();
-      $('.item').hover(function() {
-        jQuery(this).find($('.caption-title')).fadeToggle();
-        jQuery(this).find($('.caption-img')).fadeToggle();
-        jQuery(this).find($('.caption-content')).fadeToggle(); } );
+      $('.pic').hover(function() {
+        jQuery(this).find($('.caption-title')).fadeOut(500);
+        jQuery(this).find($('.caption-img')).fadeOut(500);
+
+        jQuery(this).find($('.caption-content')).delay(500).fadeIn(500);
+      }, function() {
+        jQuery(this).find($('.caption-content')).fadeOut(500);
+
+        jQuery(this).find($('.caption-title')).delay(500).fadeIn(500);
+        jQuery(this).find($('.caption-img')).delay(500).fadeIn(500);
+
+
+
+      } );
 
       $('#watch-video').hide();
       $('.scroll-down').hover(function() {
@@ -289,9 +314,18 @@
 
             // MixItUp plugin
             // http://mixitup.io
-            $('#portfoliolist').mixitup({
+            $('#equipe .portfoliolist').mixitup({
                 targetSelector: '.portfolio',
-                filterSelector: '.filter',
+                filterSelector: '#equipe .filter',
+                effects: ['fade'],
+                easing: 'snap',
+                // call the hover effect
+                onMixEnd: filterList.hoverEffect()
+            });
+
+            $('#partenaires .portfoliolist').mixitup({
+                targetSelector: '.portfolio',
+                filterSelector: '#partenaires .filter',
                 effects: ['fade'],
                 easing: 'snap',
                 // call the hover effect
@@ -303,7 +337,7 @@
         hoverEffect: function() {
 
             // Simple parallax effect
-            $('#portfoliolist .portfolio').hover(
+            $('.portfoliolist .portfolio').hover(
                 function() {
                     $(this).find('.caption').stop().animate({
                         bottom: 0

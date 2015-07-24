@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="description" content="Plateforme d'innovation alimentaire à base de micro-algues">
+    <meta name="description" content="">
     <meta name="author" content="">
-    <title>Algama</title>
+    <title>Vitality</title>
     <!-- Bootstrap Core CSS -->
     <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
     <!-- Retina.js - Load first for faster HQ mobile images. -->
@@ -16,8 +16,9 @@
     <!-- Default Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700' rel='stylesheet' type='text/css'>
     <!-- Modern Style Fonts (Include these is you are using body.modern!) -->
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
     <!-- Vintage Style Fonts (Include these if you are using body.vintage!) -->
     <link href='http://fonts.googleapis.com/css?family=Sanchez:400italic,400' rel='stylesheet' type='text/css'>
@@ -29,6 +30,7 @@
     <link href="assets/css/plugins/magnific-popup.css" rel="stylesheet" type="text/css">
     <link href="assets/css/plugins/jquery.fs.wallpaper.css" rel="stylesheet" type="text/css">
     <link href="assets/css/plugins/animate.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/plugins/ekko-lightbox.min.css" rel="stylesheet" type="text/css">
     <!-- Vitality Theme CSS -->
     <!-- Uncomment the color scheme you want to use. -->
     <!-- <link href="assets/css/vitality-red.css" rel="stylesheet" type="text/css"> -->
@@ -46,14 +48,59 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+
 </head>
 <!-- Alternate Body Classes: .modern and .vintage -->
 
-<body class="vintage" id="page-top">
+<body id="page-top">
     <!-- Navigation -->
     <!-- Note: navbar-default and navbar-inverse are both supported with this theme. -->
-
-    <header style="background-image: url('assets/img/visuels/mer-1.jpg');" id="header1">
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <img src="assets/img/logo-algama-white.png" class="img-responsive" id="white" alt="">
+                    <img src="assets/img/logo-algama.png" class="img-responsive" id="color" alt=""style="display:none;">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#manifeste-titre">Manifeste</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#metiers-titre">Expertise</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#histoire-titre">Notre histoire</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#equipe-titre">L'équipe</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#partenaires-titre">Partenaires</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact-titre">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <header style="background-image: url('assets/img/visuels/img1_home.jpg');" id="header1">
         <!-- <div class="intro-content">
 
             <iframe src="https://www.youtube.com/embed/Taj1K4KKBUk?&theme=dark&color=white&autohide=1&modestbranding=1&rel=0" frameborder="0" allowfullscreen></iframe>
@@ -63,83 +110,1537 @@
             <hr class="colored">
             <div class="brand-name-subtext">by Start Bootstrap</div>
         </div> -->
-      <div class="container wow fadeIn">
-        <div class="row">
-          <div class="intro-quote col-lg-12">
-
-            <img src="assets/img/visuels/logo-landing.png" alt="">
-
+        <div class="intro-quote col-lg-8 col-lg-offset-2">
+          <img src="assets/img/logo-white.png" alt="">
+          <div class="brand-name-subtext">
+            <p>Une alimentation alternative, saine, savoureuse et durable,</p>
+            <p>utilisant pleinement le potentiel nutritif unique</p>
+            <p>des microalgues.</p>
           </div>
+          <!-- <div class="author-quote">
+            <hr style="border-bottom: none;">
+              <p>Jean-Louis Etienne</p>
+              <p style="  font-style: italic; font-size: 12px;">Docteur en Médecine</p>
+          </div> -->
         </div>
-        <div class="row">
-          <div class="intro-quote col-lg-12">
-            <div class="under-construction">
-              <span>Site en construction</span>
-              <hr class="construction">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="intro-quote col-lg-12">
-            <div class="scroll-down">
-                <a class="btn page-scroll"  href="#contact"><i class="fa fa-angle-down fa-fw"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
         <!-- <div class="scroll-down btn-play" style="width:100px;">
           <div class="left" style="width:100px;"></div>
           <div class="center"><a class="btn page-scroll"  href="#video"><i class="fa fa-angle-right fa-fw"></i></a></div>
           <div class="text" style="display:none;"></div>
           <div class="right" style="width:100px;"></div>
-        </div>
+        </div> -->
+
+        <!-- bouton play - découvrir la vidéo -->
+
         <!-- <div class="scroll-down" id="play">
-            <a class="btn page-scroll"  href="#video"><i class="fa fa-angle-right fa-fw"></i></a>
+            <a class="btn page-scroll"  href="#video"><i class="fa fa-play fa-fw"></i></a>
         </div>
         <div class="scroll-down" id="watch-video">
             <a class="page-scroll"  href="#video">Découvrez la vidéo</a>
         </div> -->
     </header>
+    <!-- <header style="background-image: url('assets/img/visuels/foule-filtre.png'); display:none;" id="header2">
+        <div class="intro-quote col-lg-8 col-lg-offset-2">
+          <div class="brand-name-subtext">"La destinée des nations dépend de la manière dont elles se nourissent."</div>
+          <div class="author-quote">
+            <hr style="border-bottom: none;">
+              <p style="  font-style: italic; font-size: 12px;">Jean-Antheme Birllat-Savarin, La physiologie du goût(1825)</p>
+          </div>
+        </div>
+        <div class="scroll-down" id="play">
+            <a class="btn page-scroll"  href="#video"><i class="fa fa-angle-right fa-fw"></i></a>
+        </div>
+        <div class="scroll-down" id="watch-video">
+            <a class="page-scroll"  href="#video">Découvrez la vidéo</a>
+        </div>
+    </header> -->
 
 
+    <section id="video">
+      <div class="intro-content">
+        <div class="col-md-6" id="text-video">
+          <div class="vertically">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <h3 class="video-title">Algama,</h3> <br>
+                <h3 class="video-title">Plateforme d'innovation</h3> <br>
+                <h3 class="video-title">alimentaire.</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <p class="video-subtitle">Elaborés avec des professionnels de la gastronomie, les produits alimentaires Algama répondent, avec innovation et plaisir, au besoin d'une alimentation alternative et d'une meilleure santé pour tous.</p>
+              </div>
+            </div>
+            <!-- <hr style="border-bottom: none; border-top: 1px black solid; width: 30%;"> -->
+
+          </div>
+        </div>
+
+        <a href="#" data-remote="https://player.vimeo.com/video/133362130" data-toggle="lightbox">
+          <img class="yt-img" src="assets/img/visuels/video.jpg" style="float: right;"/>
+        </a>
+
+
+        <!-- <iframe width="500" height="350" src="https://www.youtube.com/embed/Taj1K4KKBUk?&theme=dark&color=white&autohide=1&modestbranding=1&rel=0" frameborder="0" allowfullscreen></iframe> -->
+
+
+
+          <!-- <img src="assets/img/profile.png" class="img-responsive img-centered" alt="">
+          <div class="brand-name">Vitality</div>
+          <hr class="colored">
+          <div class="brand-name-subtext">by Start Bootstrap</div> -->
+      </div>
+      <!-- <div class="scroll-down">
+          <a class="btn page-scroll" href="#video"><i class="fa fa-angle-down fa-fw"></i></a>
+      </div> -->
+    </section>
+
+    <aside class="cta-quote" style="background-image: url('assets/img/visuels/citation1.jpg');">
+          <div class="container wow fadeIn">
+              <div class="row">
+                  <div class="col-md-10 col-md-offset-1">
+                    <div class="container-quote">
+                      <span class="quote">
+                        "La destinée des nations dépend
+                      </span>
+                      <span class="quote" style="margin-left: 15px;">
+                        de la manière dont elles se nourissent."
+                      </span>
+                      <div class="author">
+                        <p>Jean-Anthelme Brillat-Savarin</p>
+                        <p style="font-size: 15px;"><em>La physiologie du goût (1825)</em></p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+    </aside>
+
+    <section id="manifeste-titre">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-lg-12 wow fadeIn">
+            <h1 class="section-title">Manifeste</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container-fluid">
+        <div class="row text-center content-row">
+          <div class="col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".2s" style="padding-left: 0px; padding-right: 0px;">
+            <div class="about-content">
+              <div href="#placeHolder" class="pic">
+                <div class="back-img">
+                  <img id="enjeu" class="square-pic img-responsive" src="assets/img/visuels/enjeu.png" alt="first-picture">
+                </div>
+                <div id="haut-potentiel">
+                  <div class="title">
+                    <h2 class="caption-title">Un enjeu</h2>
+                    <h2 class="caption-title">planétaire</h2>
+                  </div>
+                  <div class="caption caption-content" id="text-enjeu">
+                    <h4>En 2050, la Terre sera peuplée de 9 milliards d'habitants</h4>
+                    <p>La filière agroalimentaire devra faire face à l'augmentation de la demande alimentaire, avec en parallèle des enjeux majeurs de raréfaction des ressources et de dégradation de l'environnement.</p>
+                    <p>Dans ce contexte, ALGAMA s'engage dans une ambition de création et de production d'alimentation alternative, au profit de tous.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".2s" style="padding-left: 0px; padding-right: 0px;">
+            <div class="about-content">
+              <div href="#placeHolder" class="pic">
+                <div class="back-img">
+                  <img id="enjeu" class="square-pic img-responsive" src="assets/img/visuels/cuiller-spiru-dark.jpg" alt="first-picture">
+                </div>
+                <div id="haut-potentiel" >
+                  <div class="title">
+                    <h2 class="caption-title">Une solution</h2>
+                    <h2 class="caption-title">à haut potentiel</h2>
+                  </div>
+                  <div class="caption caption-content" id="text-potentiel">
+                    <h4>Algama intègre des éléments nutritionnels exceptionnels issus de microalgues.</h4>
+                    <p>Les microalgues, de part leur richesse et leurs qualités uniques, sont utilisées dans de nombreuses solutions novatrices : énergie et chimie verte, cosmétique, nutrition et santé. En solution alimentation et nutrition, la spiruline et la chlorelle sont des microalgues Stars qui détiennent des propriétés nutritionnelles exceptionnelles. Ces micro-organismes s'annoncent comme des éléments majeurs dans l'enjeu de l'alimentation mondiale, grâce leur teneur unique en protéine, et leur faible impact en production sur l'environnement.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+              <!-- </div> -->
+          </div>
+                <!-- <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".6s">
+                    <div class="about-content">
+                        <i class="fa fa-tablet fa-4x"></i>
+                        <h3>Responsive</h3>
+                        <p>When building this theme, we've paid close attention to how it looks on various screen sizes. Try it out on a phone or tablet!</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".8s">
+                    <div class="about-content">
+                        <i class="fa fa-heart fa-4x"></i>
+                        <h3>Built with Love</h3>
+                        <p>All of our themes are crafted with care, and we strive to make your experience as one of our customers the best as possible.</p>
+                    </div>
+                </div> -->
+        </div>
+            <!-- <div class="row content-row">
+
+              <div id="placeHolder" class="col-lg-8 col-lg-offset-2">
+              </div>
+            </div> -->
+            <!-- <div id="enjeuCollapse" class="expandCollapseContent">
+              <ul>
+                  <li>Augmentation de la demande alimentaire</li>
+                  <li>Raréfaction de la disponibilité des ressources</li>
+                  <li>Dégradation de l’environnement</li>
+                  <li>Forte dépendance européenne en protéines (70% d’importations)</li>
+                  <span>Il est vital à court terme de trouver de nouvelles solutions pour satisfaire les besoins mondiaux en protéines. </span>
+              </ul>
+            </div>
+            <div id="spirulineCollapse" class="expandCollapseContent">
+              <ul>
+                  <li>Les microalgues, à l’origine de la vie sur terre, sont des plantes ancestrales microscopiques.</li>
+                  <li>Ces micro-organismes sont constitués de différents composants d’intérêt et présentent un immense potentiel en termes de bénéfices nutritionnels et santé.</li>
+                  <li>La spiruline, microalgue « star » contient : (je te fournis le visuel par mail également)</li>
+              </ul>
+            </div> -->
+            <!-- <div class="row text-center content-row"> -->
+              <!-- <img src="img/etape2.png" width="70%"><br> -->
+
+            <!-- </div> -->
+      </div>
+    </section>
+    <section class="portfolio-carousel wow fadeIn" id="chiffres">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="item" style="background-image: url('assets/img/visuels/main.jpg')">
+            <div class="row text-center">
+              <div class="col-lg-12 wow fadeIn">
+                <h1 class="section-title">Chiffres clefs</h1>
+              </div>
+            </div>
+            <div class="row text-center">
+              <div class="col-md-4 col-sm-12 wow counter fadeIn">
+                <img src="assets/img/visuels/carotte.png" alt="">
+                <h1 class="numbers timer percent" data-from="0" data-to="65"
+                                    data-speed="3000"></h1>
+                                    <!-- 65% -->
+                <p>De protéines</p>
+                <p>végétales contenues</p>
+                <p>en moyenne dans la spiruline.</p>
+
+              </div>
+              <div class="col-md-4 col-sm-12 wow fadeIn">
+                <img src="assets/img/visuels/medaille.png" alt="">
+                <h1 class="numbers timer" data-from="0" data-to="3"
+                                    data-speed="3000"></h1>
+                                    <!-- 3 -->
+                <p>Microalgues homologuées</p>
+                <p>propres à la consommation humaine,</p>
+                <p>sur 200 000 à 7M d'espèces estimées.</p>
+              </div>
+              <div class="col-md-4 col-sm-12 wow fadeIn">
+                <img src="assets/img/visuels/tracteur.png" alt="">
+                <h1 class="numbers timer percent" data-from="0" data-to="70"
+                                    data-speed="3000"></h1>
+                                    <!-- 300 -->
+                <p>d'augmentation de</p>
+                <p>la production alimentaire</p>
+                <p>mondiale d'ici 2050.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- <section id="work" class="bg-gray">
+        <div class="container text-center wow fadeIn">
+            <h2>Our Work</h2>
+            <hr class="colored">
+            <p>Examples of our work which represent our design and marketing capabilities.</p>
+        </div>
+    </section> -->
+    <section id="metiers-titre">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-lg-12 wow fadeIn">
+            <h1 class="section-title">Expertises métiers</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="metiers" class="bg-gray">
+      <div class="container-fluid">
+        <div class="row text-center content-row">
+          <div class="col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".2s" style="padding-left: 0px; padding-right: 0px;">
+            <div class="about-content">
+              <div href="#placeHolder" class="pic">
+                <div class="back-img">
+                  <img class="square-pic img-responsive" src="assets/img/visuels/RD-dark.jpg" alt="first-picture">
+                </div>
+                <div id="RD" >
+                  <img src="assets/img/pictos/picto-recherche.png" alt="" class="caption caption-img">
+                  <h2 class="caption-title">Recherche &</h2>
+                  <h2 class="caption-title">Développement</h2>
+                  <div class="caption caption-content" id= "text-RD">
+                    <p>Le coeur de l'activité d'Algama est la création d'ingrédients et de produits innovants issus des actifs des microalgues. Ainsi, la mission 1ère de l'entité R&D consiste à identifier, sélectionner les microalgues à propriétés uniques, dans l'objectif d'intégration alimentaire et de production de produits grand public.</p>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".2s" style="padding-left: 0px; padding-right: 0px;">
+            <div class="about-content">
+              <div href="#placeHolder" class="pic">
+                <div id="marketing">
+                  <img src="assets/img/pictos/picto-business.png" alt="" class="caption caption-img">
+                  <h2 class="caption-title">Innovation</h2>
+                  <h2 class="caption-title">Produit</h2>
+                  <div class="caption caption-content" id="text-marketing">
+                    <p>Les équipes R&D, Mkg et consultants culinaires, travaillent en étroite collaboration dès les premières étapes de conception et de création d'un produit. L'objectif de l'équipe est de proposer et de distribuer des produits alimentaires innovants, savoureux, à fort potentiel marché, tout en maîtrisant les contraintes et les barrières technologiques, propres à l'intégration des nutriments des microalgues, dans l'univers alimentaire.</p>
+                  </div>
+                </div>
+                <div class="back-img">
+                  <img id="spiruline" class="square-pic" src="assets/img/visuels/innov-produit-dark.jpg" alt="first-picture">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+        <!-- <div class="container text-center wow fadeIn">
+            <div class="row content-row">
+                <div class="col-lg-12">
+                    <div class="about-carousel">
+                        <div class="item">
+                            <div class="back-img">
+                              <img src="assets/img/visuels/samira-recherche.jpg" class="img-responsive" alt="">
+                            </div>
+                            <h3 class="caption caption-title">Recherche</h3>
+                            <img src="assets/img/pictos/picto-recherche.png" alt="" class="caption caption-img">
+                            <div class="caption caption-content">
+
+                                <hr class="colored">
+                                <p>L’entité Recherche étudie en partenariat avec le MNHN et le CNRS les possibilités d’utiliser les microalgues en tant qu’ ingrédient. </br> Nous travaillons notamment sur de nouveaux process brevetables qui nous permettront de lever des verrous technologiques et de protéger nos innovations.</p>
+                                <hr class="colored">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="back-img">
+                              <img src="assets/img/people/2.jpg" class="img-responsive" alt="">
+                            </div>
+                            <h3 class="caption caption-title">Developpement</h3>
+                            <img src="assets/img/pictos/picto-dev.png" alt="" class="caption caption-img">
+                            <div class="caption caption-content">
+
+                                <hr class="colored">
+                                <p>Le cœur de notre activité est la création d’ingrédients et de produits innovants issus des actifs des microalgues. </br> <strong>10 projets </strong> sont en cours dans nos laboratoires et avec nos partenaires industriels.</p>
+                                <hr class="colored">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="back-img">
+                              <img src="assets/img/people/3.jpg" class="img-responsive" alt="">
+                            </div>
+                            <h3 class="caption caption-title">Business</h3>
+                            <img src="assets/img/pictos/picto-business.png" alt="" class="caption caption-img">
+                            <div class="caption caption-content">
+
+                                <hr class="colored">
+                                <p>Nous assurons la mise en place de stratégies marketing & commerciales par une maitrise des problématiques de marché et de distribution afférentes au secteur.</p>
+                                <hr class="colored">
+                            </div>
+                        </div> -->
+                      <!-- </div>
+                  </div> -->
+
+<!-- ////////////////// -->
+
+
+                        <!-- <div class="item">
+                            <img src="assets/img/people/4.jpg" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>Amy Vanderbute</h3>
+                                <hr class="colored">
+                                <p>Graphic Artist</p>
+                                <ul class="list-inline social">
+                                    <li>
+                                        <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-dribbble fa-fw"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/people/5.jpg" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>Jeremy Davidson</h3>
+                                <hr class="colored">
+                                <p>Web Developer</p>
+                                <ul class="list-inline social">
+                                    <li>
+                                        <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-github fa-fw"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> -->
+
+    </section>
+
+
+
+
+    <!-- <section class="portfolio-carousel wow fadeIn">
+        <div id="expertise" class="item" style="background-image: url('assets/img/visuels/expertise.png')">
+        </div>
+    </section> -->
+    <section id="springwave-titre">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-lg-12 wow fadeIn">
+            <h1 class="section-title">Premier produit</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio-carousel wow fadeIn" id="springwave">
+        <div class="item" style="background-image: url('assets/img/visuels/spring.jpg')">
+
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="project-details">
+                          <img src="assets/img/visuels/logo3.png" class="img-responsive client-logo" alt="">
+                          <!-- <h2 class="project-description">Notre premier produit.</h2> -->
+                      </div>
+                      <div class="project-details">
+                        <a href="#portfolioModal1" data-toggle="modal" class="btn btn-outline-light">Voir plus de détails <i class="fa fa-long-arrow-right fa-fw"></i></a>
+                      </div>
+                  </div>
+                  <!-- <div class="col-md-8 col-md-pull-4 hidden-xs">
+                      <img src="assets/img/visuels/bouteille.png" class="img-responsive portfolio-image" alt="">
+                  </div> -->
+              </div>
+          </div>
+        </div>
+
+        <!-- <div class="item" style="background-image: url('assets/img/portfolio/bg-2.jpg')">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8">
+                        <div class="project-details">
+                            <img src="assets/img/client-logos/logo-2.png" class="img-responsive client-logo" alt="">
+                            <span class="project-name">Project Name</span>
+                            <span class="project-description">Branding, Website Design</span>
+                            <hr class="colored">
+                            <a href="#portfolioModal2" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-md-pull-4 hidden-xs">
+                        <img src="assets/img/portfolio/tablet-screens.png" class="img-responsive portfolio-image" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item" style="background-image: url('assets/img/portfolio/bg-3.jpg')">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8">
+                        <div class="project-details">
+                            <img src="assets/img/client-logos/logo-1.png" class="img-responsive client-logo" alt="">
+                            <span class="project-name">Project Name</span>
+                            <span class="project-description">Branding, Website Design</span>
+                            <hr class="colored">
+                            <a href="#portfolioModal3" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-md-pull-4 hidden-xs">
+                        <img src="assets/img/portfolio/mobile-screens.png" class="img-responsive portfolio-image" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item" style="background-image: url('assets/img/portfolio/bg-4.jpg')">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8">
+                        <div class="project-details">
+                            <img src="assets/img/client-logos/logo-2.png" class="img-responsive client-logo" alt="">
+                            <span class="project-name">Project Name</span>
+                            <span class="project-description">Branding, Website Design</span>
+                            <hr class="colored">
+                            <a href="#portfolioModal4" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-md-pull-4 hidden-xs">
+                        <img src="assets/img/portfolio/tablet-screens.png" class="img-responsive portfolio-image" alt="">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+    <aside class="cta-quote" style="background-image: url('assets/img/visuels/citation2.jpg');">
+      <div class="container wow fadeIn">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="container-quote">
+              <span class="quote">
+                "La découverte d'un met nouveau
+              </span>
+              <span class="quote" style="margin-left: 15px;">
+                fait plus pour le genre humain que
+              </span>
+              <span class="quote" style="margin-left: 15px;">
+                la découverte d'une étoile."
+              </span>
+              <div class="author">
+                <p>Jean-Anthelme Brillat-Savarin</p>
+                <p style="font-size: 15px;"><em>La physiologie du goût (1825)</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- <section class="portfolio-carousel wow fadeIn" id="timeline">
+      <div class="item" style="background-image: url('assets/img/visuels/timeline.png')">
+          <div class="container text-center wow fadeIn">
+          <h2>Notre histoire</h2>
+          <hr class="colored">
+        </div>
+      </div>
+    </section> -->
+    <!-- <section class="portfolio-carousel wow fadeIn" id="timeline">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-lg-12 wow fadeIn">
+              <h1 style="color:black;">Notre histoire</h1>
+              <hr class="colored">
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="item" style="background-image: url('assets/img/visuels/timeline.png')">
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- <section id="process" class="services">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-12 wow fadeIn">
+                    <h2>Our Process</h2>
+                    <hr class="colored">
+                    <p>Here is an overview of how we approach each new project.</p>
+                </div>
+            </div>
+            <div class="row content-row">
+                <div class="col-md-4 wow fadeIn" data-wow-delay=".2s">
+                    <div class="media">
+                        <div class="pull-left">
+                            <i class="fa fa-clipboard"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Plan</h3>
+                            <ul>
+                                <li>Client interview</li>
+                                <li>Gather consumer data</li>
+                                <li>Create content strategy</li>
+                                <li>Analyze research</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeIn" data-wow-delay=".4s">
+                    <div class="media">
+                        <div class="pull-left">
+                            <i class="fa fa-pencil"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Create</h3>
+                            <ul>
+                                <li>Build wireframe</li>
+                                <li>Gather client feedback</li>
+                                <li>Code development</li>
+                                <li>Marketing review</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeIn" data-wow-delay=".6s">
+                    <div class="media">
+                        <div class="pull-left">
+                            <i class="fa fa-rocket"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Launch</h3>
+                            <ul>
+                                <li>Deploy website</li>
+                                <li>Market product launch</li>
+                                <li>Collect UX data</li>
+                                <li>Quarterly maintenence</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section id="histoire-titre" style="background-color: #f5f5f5;">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-lg-12 wow fadeIn">
+            <h1 class="section-title">Notre histoire</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <aside class="cta-quote history" style="background-color: #f5f5f5;" id="treize">
+      <div class="container wow fadeIn">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="year">
+              <h3 style="color: #3778bc;">
+                2013
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="history-title">
+                <h3 style="color: #3778bc;">
+                  la création
+                </h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="history-logo">
+                <img src="assets/img/visuels/fusée.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="history-text">
+              <span style="color: #3778bc;">
+                Lauréats de nombreux concours d'innovation, <strong>Al</strong>vyn, <strong>Ga</strong>ëtan et <strong>Ma</strong>thieu décident de créer leur entreprise, <strong>Algama</strong>. Naissance de Springwave, le 1er produit d'Algama, conçu avec l'appui d'experts stratégiques, techniques et technologiques.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <aside class="cta-quote history" style="background-image: url('assets/img/visuels/cookies.jpg');" id="quatorze">
+      <div class="container wow fadeIn">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="year">
+              <h3 style="color: white">
+                2014
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="history-title">
+                <h3 style="color: white;">
+                  l'année de
+                </h3>
+                <h3 style="color: white;">
+                  la concrétisation
+                </h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="history-logo">
+                <img src="assets/img/visuels/coupe.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="history-text">
+              <span style="color: white;">
+                Algama est lauréat de nombreux Prix en France et à l'international. Springwave remporte <a href="http://www.sialparis.fr/">2 prix au SIAL</a> parmi plus de 1200 produits en compétition dont celui de la Meilleure Boisson non Alcoolisée. Les équipes R&D d'Algama s'installent à Agoranov pour y développer de nombreux produits inédits.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <aside class="cta-quote history" style="background-color: #f5f5f5;" id="quinze">
+      <div class="container wow fadeIn">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="year">
+              <h3 style="color: #3778bc;">
+                2015
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="history-title">
+                <h3 style="color: #3778bc;">
+                  commercialisation de
+                </h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="history-logo">
+                <img src="assets/img/visuels/logo_bleu.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="history-text">
+              <span style="color: #3778bc;">
+                Algama poursuit son déploiement avec des alliances stratégiques industrielles majeures : partenariat d'envergure mondial avec le Groupe Roquette Frères, exposition commune à <a href="http://www.expo2015.org/fr" target="_blank">l’Expo Milano 2015</a>. D’autre part, Algama s’installe dans son nouveau foodlab au <a href="http://www.genopole.fr/" target="_blank">Genopole d’Evry</a>, 1er Biocluster Français. Présentation fin 2015 d'un nouveau produit Algama pour une commercialisation visée au 1er semestre 2016.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <aside class="cta-quote history" style="background-image: url('assets/img/visuels/yaourt.jpg');" id="seize">
+      <div class="container wow fadeIn">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="year">
+              <h3 style="color: white">
+                2016
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="history-title">
+                <h3 style="color: white;">
+                  Déploiement
+                </h3>
+                <h3 style="color: white;">
+                  international
+                </h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="history-logo">
+                <img src="assets/img/visuels/planet.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="history-text">
+              <span style="color: white;">
+                Création d'une entité internationale et implantation GB/US de Springwave et d'Algama. Lancement grand public en France d'un second produit Algama.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <aside class="cta-quote history" style="background-color: #f5f5f5" id="dixsept">
+      <div class="container wow fadeIn">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="year">
+              <h3 style="color: #3778bc;">
+                2017
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="history-title">
+                <h3 style="color: #3778bc;">
+                  structuration
+                </h3>
+                <h3 style="color: #3778bc;">
+                  internationale &
+                </h3>
+                <h3 style="color: #3778bc;">
+                  accélération R&D
+                </h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="history-logo">
+                <img src="assets/img/visuels/etoile.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="history-text">
+              <span style="color: #3778bc;">
+                Déploiement international et structuration des implantations, recrutement d'équipes locales. Accélération des efforts en R&D avec la sortie de 3 nouveaux produits.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <section id="equipe-titre">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-lg-12 wow fadeIn">
+            <h1 class="section-title">L'équipe</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="equipe">
+        <div class="container text-center wow fadeIn">
+            <div class="row content-row">
+                <div class="col-lg-12">
+                    <div class="portfolio-filter">
+                        <ul id="filters" class="clearfix">
+                            <li>
+                                <span class="filter active" data-filter="identity graphic logo web">Tous</span>
+                            </li>
+                            <li>
+                                <span class="filter" data-filter="identity">Co-fondateurs</span>
+                            </li>
+                            <li>
+                                <span class="filter" data-filter="graphic">Tech</span>
+                            </li>
+                            <li>
+                                <span class="filter" data-filter="web">Business</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="portfoliolist">
+                      <!-- Exemple avec modale -->
+
+                        <!-- <div class="portfolio identity" data-cat="identity" href="#portfolioModal1" data-toggle="modal">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/people/alvyn-bleu.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Alvyn SEVERIEN</a>
+                                        <span class="text-category">Co-fondateur - CEO</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="portfolio identity" data-cat="identity">
+                            <div class="portfolio-wrapper">
+                              <a href="https://fr.linkedin.com/in/alvynseverien" target="_blank">
+                                <img src="assets/img/people/alvyn-bleu.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a href="https://fr.linkedin.com/in/alvynseverien" target="_blank" class="text-title">Alvyn SEVERIEN</a>
+                                        <span class="text-category">Co-fondateur - CEO</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio web" data-cat="web">
+                            <div class="portfolio-wrapper">
+                              <a href="https://fr.linkedin.com/pub/hugo-lercher/21/1/659" target="_blank">
+                                <img src="assets/img/people/hugo-bleu.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a href="https://fr.linkedin.com/pub/hugo-lercher/21/1/659" target="_blank" class="text-title">Hugo LERCHER</a>
+                                        <span class="text-category">Responsable Commercial</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio web" data-cat="web">
+                            <div class="portfolio-wrapper">
+                                <a href="https://fr.linkedin.com/pub/pauline-lerdon/90/685/554" target="_blank">
+                                  <img src="assets/img/people/pauline-bleu.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a href="https://fr.linkedin.com/pub/pauline-lerdon/90/685/554" target="_blank" class="text-title">Pauline LERDON</a>
+                                        <span class="text-category">Graphiste</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio graphic" data-cat="graphic">
+                            <div class="portfolio-wrapper">
+                              <a href="https://fr.linkedin.com/in/samiraachir/fr" target="_blank">
+                                <img src="assets/img/people/samira-bleu.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a href="https://fr.linkedin.com/in/samiraachir/fr" target="_blank" class="text-title">Samira ACHIR</a>
+                                        <span class="text-category">PhD - Responsable scientifique</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio web" data-cat="web">
+                            <div class="portfolio-wrapper">
+                              <a href="https://fr.linkedin.com/pub/eric-mourouvin/25/6/ab1" target="_blank">
+                                <img src="assets/img/people/eric-bleu.jpg" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a href="https://fr.linkedin.com/pub/eric-mourouvin/25/6/ab1" target="_blank" class="text-title">Eric MOUROUVIN</a>
+                                        <span class="text-category">Responsable Marketing</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                              </a>
+
+                            </div>
+                        </div>
+
+                        <div class="portfolio identity" data-cat="identity">
+                            <div class="portfolio-wrapper">
+                              <a href="https://fr.linkedin.com/in/ggohin" target="_blank">
+                                <img src="assets/img/people/gaetan-bleu.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a href="https://fr.linkedin.com/in/ggohin" target="_blank" class="text-title">Gaetan GOHIN</a>
+                                        <span class="text-category">Co-fondateur - CFO</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio identity" data-cat="identity">
+                            <div class="portfolio-wrapper">
+                              <a href="https://fr.linkedin.com/pub/mathieu-goncalves-alves/64/371/560" target="_blank">
+                                <img src="assets/img/people/mathieu-bleu.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a href="https://fr.linkedin.com/pub/mathieu-goncalves-alves/64/371/560" target="_blank" class="text-title">Mathieu Gonçalves</a>
+                                        <span class="text-category">Co-fondateur - CTO</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio graphic" data-cat="graphic">
+                            <div class="portfolio-wrapper">
+                              <a href="https://fr.linkedin.com/pub/thomas-felice/61/84/186" target="_blank">
+                                <img src="assets/img/people/thomas-bleu.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a href="https://fr.linkedin.com/pub/thomas-felice/61/84/186" target="_blank" class="text-title">Thomas FELICE</a>
+                                        <span class="text-category">Responsable R&D</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio graphic" data-cat="graphic">
+                            <div class="portfolio-wrapper">
+                              <a href="https://fr.linkedin.com/pub/hélène-chrapecki/a7/430/359" target="_blank">
+                                <img src="assets/img/people/helene-bleu.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a href="https://fr.linkedin.com/pub/hélène-chrapecki/a7/430/359" target="_blank" class="text-title">Hélène CHRAPECKI</a>
+                                        <span class="text-category">Développement Produits</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio graphic" data-cat="graphic">
+                            <div class="portfolio-wrapper">
+                              <a href="https://fr.linkedin.com/pub/maxime-pecquet/b2/67/493" target="_blank">
+                                <img src="assets/img/people/maxime-bleu.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a href="https://fr.linkedin.com/pub/maxime-pecquet/b2/67/493" target="_blank" class="text-title">Maxime PECQUET</a>
+                                        <span class="text-category">Développement Produits</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio graphic" data-cat="graphic">
+                            <div class="portfolio-wrapper">
+                              <a href="https://fr.linkedin.com/pub/julien-bencheikh/a6/2b2/551" target="_blank">
+                                <img src="assets/img/people/julien_bleu.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a href="https://fr.linkedin.com/pub/maxime-pecquet/b2/67/493" target="_blank" class="text-title">Julien BENCHEICK</a>
+                                        <span class="text-category">Recherche procédés</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio graphic web" data-cat="graphic web">
+                            <div class="portfolio-wrapper">
+                              <a href="#contact-titre">
+                                <img src="assets/img/people/recrutement.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a href="#contact-titre" class="text-title">Notre projet vous plait ?</a>
+                                        <span class="text-category">Rejoignez-nous !</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonials bg-gray">
+        <div class="container wow fadeIn">
+            <div class="row text-center">
+              <div class="col-lg-12 wow fadeIn">
+                <h1 class="section-title">Distinctions</h1>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="testimonials-carousel">
+
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                  <div class="col-lg-6">
+                                   <!--  <p class="lead">SIAL 2014</p> -->
+                                    <div class="row" class="testimonial-info">
+                                      <div class="col-lg-12">
+                                        <div class="testimonial-img">
+                                            <img src="assets/img/prix/sial.png" class="img-responsive" alt="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row" class="testimonial-info">
+                                      <div class="col-lg-12">
+                                        <div class="testimonial-author">
+                                            <span class="name">Grand Prix du Jury</span><br>
+                                            <span class="name">Prix du Public</span>
+                                            <p class="small">Meilleure boisson innovante</p>
+                                            <a href="http://www.sialparis.fr/Evenements/SIAL-Innovation-nouveautes-et-innovations-alimentaires/Decouvrez-les-Grands-Prix-SIAL-Innovation-2014" target="_blank">Plus d'infos</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6">
+                                    <!-- <p class="lead">Challenges</p> -->
+                                    <div class="row" class="testimonial-info">
+                                      <div class="col-lg-12">
+                                        <div class="testimonial-img">
+                                            <img src="assets/img/prix/braubevial.png" class="img-responsive" alt="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row" class="testimonial-info">
+                                      <div class="col-lg-12">
+                                        <div class="testimonial-author">
+                                            <span class="name">World's Best functional drink 2014</span>
+                                            <p class="small">Prix internationnal décerné par le magazine Foodbev</p>
+                                            <a href="http://www.foodbev.com/news/2014-world-beverage-innovation-awards-braubeviale-finalists-and-winners" target="_blank">Plus d'infos</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                  <div class="col-lg-6">
+                                   <!--  <p class="lead">SIAL 2014</p> -->
+                                    <div class="row" class="testimonial-info">
+                                      <div class="col-lg-12">
+                                        <div class="testimonial-img">
+                                            <img src="assets/img/prix/ycombinator.png" class="img-responsive" alt="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row" class="testimonial-info">
+                                      <div class="col-lg-12">
+                                        <div class="testimonial-author">
+                                            <span class="name">Finaliste S15 Ycombinator</span><br>
+                                            <p class="small">Plus grand concours <br>de startups au monde</p>
+                                            <a href="http://www.ycombinator.com" target="_blank">Plus d'infos</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6">
+                                    <!-- <p class="lead">Challenges</p> -->
+                                    <div class="row" class="testimonial-info">
+                                      <div class="col-lg-12">
+                                        <div class="testimonial-img">
+                                            <img src="assets/img/prix/challenges.png" class="img-responsive" alt="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row" class="testimonial-info">
+                                      <div class="col-lg-12">
+                                        <div class="testimonial-author">
+                                            <span class="name">100 startups où investir</span>
+                                            <p class="small">Algama a été sélectionnée parmi les 100 startups dans lesquelles investir en 2014</p>
+                                            <a href="http://www.challenges.fr/classements/start-up/fiche/springwave;378.html" target="_blank">Plus d'infos</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                  <div class="col-lg-6">
+                                   <!--  <p class="lead">SIAL 2014</p> -->
+                                    <div class="row" class="testimonial-info">
+                                      <div class="col-lg-12">
+                                        <div class="testimonial-img">
+                                            <img src="assets/img/prix/innov2030.png" class="img-responsive" alt="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row" class="testimonial-info">
+                                      <div class="col-lg-12">
+                                        <div class="testimonial-author">
+                                            <span class="name">Finaliste Innov 2030</span><br>
+                                            <p class="small">Concours mondial d’innovation initié par le gouvernement Français</p>
+                                            <a href="http://www.entreprises.gouv.fr/innovation-2030/accueil-innovation-2030" target="_blank">Plus d'infos</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6">
+                                    <!-- <p class="lead">Challenges</p> -->
+                                    <div class="row" class="testimonial-info">
+                                      <div class="col-lg-12">
+                                        <div class="testimonial-img">
+                                            <img src="assets/img/prix/osons.png" class="img-responsive" alt="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row" class="testimonial-info">
+                                      <div class="col-lg-12">
+                                        <div class="testimonial-author">
+                                            <span class="name">Meilleur potentiel à l'export</span>
+                                            <p class="small">Décerné par Business France <br>à l'exposition Osons la France</p>
+                                            <a href="http://www.challenges.fr/classements/start-up/fiche/springwave;378.html" target="_blank">Plus d'infos</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- <div class="item">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p class="lead">"Working with Vitality was both a valuable and rewarding experience."</p>
+                                    <hr class="colored">
+                                    <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?</p>
+                                    <div class="testimonial-info">
+                                        <div class="testimonial-img">
+                                            <img src="assets/img/testimonials/1.jpg" class="img-circle img-responsive" alt="">
+                                        </div>
+                                        <div class="testimonial-author">
+                                            <span class="name">Jim Walker</span>
+                                            <p class="small">CEO of GeneriCorp</p>
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <h3>
+                  <a href="https://fr.slideshare.net/secret/iw3wdVJfOmCfX6" target="_blank">Voir l'intégralité des retombées médias 2014-2015</a>
+                </h3>
+              </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="partenaires-titre">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-lg-12 wow fadeIn">
+            <h1 class="section-title">Nos partenaires</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="partenaires">
+        <div class="container text-center wow fadeIn">
+            <div class="row content-row">
+                <div class="col-lg-12">
+                    <div class="portfolio-filter">
+                        <ul id="filters" class="clearfix">
+                            <li>
+                                <span class="filter active" data-filter="recherche compet financement dev">Tous</span>
+                            </li>
+                            <li>
+                                <span class="filter" data-filter="recherche">R&D</span>
+                            </li>
+                            <li>
+                                <span class="filter" data-filter="compet">Pôles de Compétitivité</span>
+                            </li>
+                            <li>
+                                <span class="filter" data-filter="financement">Financement public</span>
+                            </li>
+                            <li>
+                                <span class="filter" data-filter="dev">Développement</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="portfoliolist">
+                        <div class="portfolio dev" data-cat="dev">
+                            <div class="portfolio-wrapper">
+                              <a href="http://www.accorhotels.com/fr" target="_blank">
+                                <img src="assets/img/partenaires/accor.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a href="http://www.accorhotels.com/fr" target="_blank" class="text-title">Groupe Accor</a>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio compet" data-cat="compet">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/partenaires/agoranov.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Centre Agoranov</a>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio recherche" data-cat="recherche">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/partenaires/cnrs.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">CNRS</a>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio recherche" data-cat="recherche">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/partenaires/roquette.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Groupe Roquette</a>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio financement" data-cat="financement">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/partenaires/bpi.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Banque publique d'Investissement</a>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio compet" data-cat="compet">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/partenaires/vitagora.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Pôle Vitagora</a>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio dev" data-cat="dev">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/partenaires/PP.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Incubateur Le Petit Poucet</a>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio recherche" data-cat="recherche">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/partenaires/musee.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Musée National d'Histoire Naturelle</a>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio financement" data-cat="financement">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/partenaires/commission.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Commission Européenne</a>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio compet" data-cat="compet">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/partenaires/trimatec.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Pôle Trimatec</a>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio dev" data-cat="dev">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/partenaires/raise.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Raise</a>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="portfolio financement" data-cat="financement">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/partenaires/idf.png" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">Région Ile-de-France</a>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="pricing" class="pricing" style="background-image: url('assets/img/bg-pricing.jpg')">
+        <div class="container wow fadeIn">
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <h2>Pricing</h2>
+                    <hr class="colored">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, quae, laborum, voluptate delectus odio doloremque error porro obcaecati nemo animi ducimus quaerat nostrum? Ab molestiae eaque et atque architecto reiciendis.</p>
+                </div>
+            </div>
+            <div class="row content-row">
+                <div class="col-md-4">
+                    <div class="pricing-item featured-first">
+                        <h3>Basic</h3>
+                        <hr class="colored">
+                        <div class="price"><span class="number"><sup>$</sup>25</span> / month</div>
+                        <ul class="list-group">
+                            <li class="list-group-item">60 Users</li>
+                            <li class="list-group-item">Unlimited Forums</li>
+                            <li class="list-group-item">Unlimited Reports</li>
+                            <li class="list-group-item">3,000 Entries per Month</li>
+                            <li class="list-group-item">200 MB Storage</li>
+                            <li class="list-group-item">Unlimited Support</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-dark">Sign Up</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing-item featured">
+                        <h3>Plus</h3>
+                        <hr class="colored">
+                        <div class="price"><span class="number"><sup>$</sup>50</span> / month</div>
+                        <ul class="list-group">
+                            <li class="list-group-item"><strong>60</strong> Users</li>
+                            <li class="list-group-item">Unlimited Forums</li>
+                            <li class="list-group-item">Unlimited Reports</li>
+                            <li class="list-group-item"><strong>3,000</strong> Entries per Month</li>
+                            <li class="list-group-item"><strong>200 MB</strong> Storage</li>
+                            <li class="list-group-item">Unlimited Support</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-dark">Sign Up</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing-item featured-last">
+                        <h3>Premium</h3>
+                        <hr class="colored">
+                        <div class="price"><span class="number"><sup>$</sup>150</span> / month</div>
+                        <ul class="list-group">
+                            <li class="list-group-item">60 Users</li>
+                            <li class="list-group-item">Unlimited Forums</li>
+                            <li class="list-group-item">Unlimited Reports</li>
+                            <li class="list-group-item">3,000 Entries per Month</li>
+                            <li class="list-group-item">200 MB Storage</li>
+                            <li class="list-group-item">Unlimited Support</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-dark">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section id="contact-titre">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-lg-12 wow fadeIn">
+            <h1 class="section-title">Nous contacter</h1>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="contact">
         <div class="container wow fadeIn">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2>Informations</h2>
-                    <hr class="black">
-                    <p>Retrouvez notre site très prochainement. En attendant, n’hésitez pas à nous contacter via le formulaire de contact ci-dessous.</p>
+                <div class="col-lg-12 text-center">
+                    <p>Si vous souhaitez nous contacter, écrivez-nous un message grâce au formulaire ci-dessous.</p>
                 </div>
             </div>
             <div class="row content-row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <form action="http://formspree.io/mathieu@springwave.fr" method="POST" name="sentMessage" id="contactForm" >
+                    <form action="http://formspree.io/mathieu@algama.fr" method="POST" name="sentMessage" id="contactForm" >
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Nom</label>
-                                <input type="text" class="form-control" name="name" placeholder="Nom" id="name" required data-validation-required-message="Veuillez indiquer un nom.">
+                                <input type="text" class="form-control" name="name" placeholder="Nom" id="name" required data-validation-required-message="Please enter your name.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Adresse Email</label>
-                                <input type="email" name="_replyto" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Veuillez indiquer votre adresse email.">
+                                <label>Email</label>
+                                <input type="email" name="_replyto" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Please enter your email address.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Numéro de téléphone</label>
-                                <input type="tel" class="form-control" placeholder="Numéro de téléphone" id="phone" required data-validation-required-message="Veuillez indiquer votre numéro de téléphone.">
+                                <label>Téléphone</label>
+                                <input type="tel" class="form-control" placeholder="Téléphone" id="phone" required data-validation-required-message="Please enter your phone number.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Message</label>
-                                <textarea name="message" rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Veuillez entrer votre message."></textarea>
+                                <textarea name="message" rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -147,7 +1648,7 @@
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <button type="submit" value="Send" class="btn btn-outline-dark">Envoyer</button>
+                                <button type="submit" value="Envoyer" class="btn btn-outline-dark">Send</button>
                             </div>
                         </div>
                     </form>
@@ -156,6 +1657,43 @@
         </div>
     </section>
     <!-- <a href="https://wrapbootstrap.com/theme/vitality-multipurpose-one-page-theme-WB02K3KK3" class="btn btn-block btn-full-width">Buy Vitality Now!</a> -->
+    <!-- <footer class="footer" style="background-image: url('assets/img/bg-footer.jpg')">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4 contact-details">
+                    <h4><i class="fa fa-phone"></i> Téléphone</h4>
+                    <p>555-213-4567</p>
+                </div>
+                <div class="col-md-4 contact-details">
+                    <h4><i class="fa fa-map-marker"></i> Nous rendre visite</h4>
+                    <p>76 boulevard Saint-Michel
+                        <br>75006, Paris</p>
+                </div>
+                <div class="col-md-4 contact-details">
+                    <h4><i class="fa fa-envelope"></i> Email</h4>
+                    <p><a href="mailto:mail@example.com">mathieu@algama.fr</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row social">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li><a href="#"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row copyright">
+                <div class="col-lg-12">
+                    <p class="small">&copy; 2015 Algama</p>
+                </div>
+            </div>
+        </div>
+    </footer> -->
     <footer class="footer" style="background-image: url('assets/img/visuels/vague.jpg')">
         <div class="container text-center">
             <div class="row">
@@ -170,7 +1708,7 @@
                 </div>
                 <div class="col-md-4 contact-details">
                     <h4><i class="fa fa-envelope"></i> Email</h4>
-                    <p><a href="mailto:contact@algama.fr">contact@algama.fr</a>
+                    <p><a href="mailto:mathieu@algama.fr">mathieu@algama.fr</a>
                     </p>
                 </div>
             </div>
@@ -194,10 +1732,167 @@
         </div>
     </footer>
 
+    <!-- Portfolio Modals -->
+    <!-- Example Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" style="background-color: white">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                          <img src="assets/img/visuels/focus.jpg" class="img-responsive portfolio-image" alt="">
+                           <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+
+                        <!-- <div class="col-lg-6 col-md-6 hidden-xs">
+                            <img src="assets/img/visuels/bouteille2.png" class="img-responsive portfolio-image" alt="">
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <img src="assets/img/client-logos/logo-1.png" class="img-responsive img-centered" alt="">
+                            <h2>Springwave</h2>
+                            <hr class="colored">
+                            <p>Springwave est la première boisson régénérante à base d’actifs issus de la spiruline.</p>
+                            <p>Naturellement bleue grâce à un pigment contenu dans la <strong><a href="www.wikipedia.com/spiruline">spiruline</a></strong>, elle est riche en minéraux et vitamines mais faible en sucres et en calories.</p>
+                            <br>
+                            <ul class="list-inline item-details">
+
+                                <li>Sortie sur le marché français : <strong><a href="http://www.springwave.fr">Eté 2015</a></strong>
+                                </li>
+
+                            </ul>
+                            <p><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></p>
+                        </div> -->
+                            <!-- <img src="assets/img/portfolio/mobile-screens.png" class="img-responsive img-centered" alt=""> -->
+                        <!-- <div class="col-lg-8 col-lg-offset-2">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Example Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('assets/img/portfolio/bg-2.jpg')">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <img src="assets/img/client-logos/logo-2.png" class="img-responsive img-centered" alt="">
+                            <h2>Project Title</h2>
+                            <hr class="colored">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <img src="assets/img/portfolio/tablet-screens.png" class="img-responsive img-centered" alt="">
+                        </div>
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <ul class="list-inline item-details">
+                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
+                                </li>
+                                <li>Date: <strong><a href="http://startbootstrap.com">April 2015</a></strong>
+                                </li>
+                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Example Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('assets/img/portfolio/bg-3.jpg')">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <img src="assets/img/client-logos/logo-1.png" class="img-responsive img-centered" alt="">
+                            <h2>Project Title</h2>
+                            <hr class="colored">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <img src="assets/img/portfolio/mobile-screens.png" class="img-responsive img-centered" alt="">
+                        </div>
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <ul class="list-inline item-details">
+                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
+                                </li>
+                                <li>Date: <strong><a href="http://startbootstrap.com">April 2015</a></strong>
+                                </li>
+                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Example Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('assets/img/portfolio/bg-4.jpg')">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <img src="assets/img/client-logos/logo-2.png" class="img-responsive img-centered" alt="">
+                            <h2>Project Title</h2>
+                            <hr class="colored">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <img src="assets/img/portfolio/tablet-screens.png" class="img-responsive img-centered" alt="">
+                        </div>
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <ul class="list-inline item-details">
+                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
+                                </li>
+                                <li>Date: <strong><a href="http://startbootstrap.com">April 2015</a></strong>
+                                </li>
+                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Core Scripts -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap/bootstrap.min.js"></script>
     <!-- Plugin Scripts -->
+    <script src="assets/js/plugins/jquery.countTo.js"  type="text/javascript"></script>
     <script src="assets/js/plugins/jquery.easing.min.js"></script>
     <script src="assets/js/plugins/classie.js"></script>
     <script src="assets/js/plugins/cbpAnimatedHeader.js"></script>
@@ -208,8 +1903,11 @@
     <script src="assets/js/plugins/wow/wow.min.js"></script>
     <script src="assets/js/contact_me.js"></script>
     <script src="assets/js/plugins/jqBootstrapValidation.js"></script>
+    <script src="assets/js/plugins/ekko-lightbox.min.js"></script>
     <!-- Vitality Theme Scripts -->
     <script src="assets/js/vitality.js"></script>
+    <!-- Youtube popup -->
+
 </body>
 
 </html>
