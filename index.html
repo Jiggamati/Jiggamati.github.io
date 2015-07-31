@@ -53,7 +53,12 @@
 
       ga('create', 'UA-65826140-1', 'auto');
       ga('send', 'pageview');
-
+    </script>
+    <script>
+      // Using jQuery Event API v1.3
+      $('#video-player').on('click', function() {
+        ga('send', 'event', 'button', 'click', 'video-player');
+      });
     </script>
 </head>
 <!-- Alternate Body Classes: .modern and .vintage -->
@@ -144,7 +149,7 @@
           </div>
         </div>
         <div class="col-md-6" style="float: right;">
-          <a href="#" data-remote="https://player.vimeo.com/video/133362130" data-toggle="lightbox">
+          <a id="video-player" href="#" data-remote="https://player.vimeo.com/video/133362130" data-toggle="lightbox">
             <img class="yt-img" src="assets/img/visuels/video.jpg"/>
           </a>
         </div>
