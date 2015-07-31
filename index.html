@@ -83,22 +83,22 @@
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#manifeste-titre">Manifeste</a>
+                        <a id="menu-manifeste" class="page-scroll" href="#manifeste-titre">Manifeste</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#metiers-titre">Expertise</a>
+                        <a id="menu-expertise" class="page-scroll" href="#metiers-titre">Expertise</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#histoire-titre">Notre histoire</a>
+                        <a id="menu-histoire" class="page-scroll" href="#histoire-titre">Notre histoire</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#equipe-titre">L'équipe</a>
+                        <a id="menu-equipe" class="page-scroll" href="#equipe-titre">L'équipe</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#partenaires-titre">Partenaires</a>
+                        <a id="menu-partenaires" class="page-scroll" href="#partenaires-titre">Partenaires</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact-titre">Contact</a>
+                        <a id="menu-contact" class="page-scroll" href="#contact-titre">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -352,7 +352,7 @@
                           <!-- <h2 class="project-description">Notre premier produit.</h2> -->
                       </div>
                       <div class="project-details">
-                        <a href="#portfolioModal1" data-toggle="modal" class="btn btn-outline-light">Voir plus de détails <i class="fa fa-long-arrow-right fa-fw"></i></a>
+                        <a id="focus-springwave" href="#portfolioModal1" data-toggle="modal" class="btn btn-outline-light">Voir plus de détails <i class="fa fa-long-arrow-right fa-fw"></i></a>
                       </div>
                   </div>
 
@@ -969,7 +969,7 @@
             <div class="row">
               <div class="col-sm-12">
                 <h3>
-                  <a href="https://fr.slideshare.net/secret/iw3wdVJfOmCfX6" target="_blank">Voir l'intégralité des retombées médias 2014-2015</a>
+                  <a id="pressbook" href="https://fr.slideshare.net/secret/iw3wdVJfOmCfX6" target="_blank">Voir l'intégralité des retombées médias 2014-2015</a>
                 </h3>
               </div>
             </div>
@@ -1336,6 +1336,30 @@
       // Using jQuery Event API v1.3
       $('#video-player').on('click', function() {
         ga('send', 'event', 'button', 'click', 'video-player');
+      });
+      $('#focus-springwave').on('click', function() {
+        ga('send', 'event', 'button', 'click', 'focus-springwave');
+      });
+      $('#pressbook').on('click', function() {
+        ga('send', 'event', 'button', 'click', 'pressbook');
+      });
+      $('#menu-manifeste').on('click', function() {
+        ga('send', 'event', 'button', 'click', 'menu-manifeste');
+      });
+      $('#menu-expertise').on('click', function() {
+        ga('send', 'event', 'button', 'click', 'menu-expertise');
+      });
+      $('#menu-histoire').on('click', function() {
+        ga('send', 'event', 'button', 'click', 'menu-histoire');
+      });
+      $('#menu-equipe').on('click', function() {
+        ga('send', 'event', 'button', 'click', 'menu-equipe');
+      });
+      $('#menu-partenaires').on('click', function() {
+        ga('send', 'event', 'button', 'click', 'menu-partenaires');
+      });
+      $('#menu-contact').on('click', function() {
+        ga('send', 'event', 'button', 'click', 'menu-contact');
       });
     </script>
 
