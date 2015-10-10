@@ -568,7 +568,8 @@ section#about div#haut-potentiel {
   color: white;
 }
 section#about div#haut-potentiel h2 {
-  font-weight: 100;
+  font-weight: 300;
+  font-family: "Raleway";
 }
 
 section#about div#text-potentiel {
@@ -595,6 +596,11 @@ section#metiers div#text-marketing {
   padding: 5% 10%;
 }
 
+section#metiers div#marketing h2, section#metiers div#RD h2 {
+  font-weight: 300;
+  font-family: "Raleway";
+}
+
 section#metiers div#marketing p {
   letter-spacing: 0.5px;
   line-height: 1.9;
@@ -606,7 +612,7 @@ section#about div#text-enjeu {
   text-align: justify;
   color: white;
   padding-left: 10%;
-  padding-top: 10%;
+  padding-top: 12%;
 }
 section#about div#text-enjeu h4 {
     font-weight: 100;
@@ -617,7 +623,7 @@ section#about div#text-enjeu p {
     letter-spacing: 0.5px;
   }
 section#metiers div#text-RD {
-  padding: 5% 10%;
+  padding: 10% 10%;
 }
 section#metiers div#text-RD p {
   letter-spacing: 0.5px;
