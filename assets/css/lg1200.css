@@ -1,0 +1,35 @@
+@media screen and (min-width: 1200px){
+    .row-eq-height-lg
+{
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex; 
+}
+    aside.cta-quote {
+    background-attachment: fixed;
+  } 
+    #videodroite {
+    
+}
+    a#focus-springwave {
+    font-size: 27px;
+}
+    .springwave {/* margin-top: 290px; */}
+        .numbers {
+        font-size: 80PX;
+    }
+    .testimonials img {
+    margin-bottom: 0px;
+}
+    h1.section-title {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+    nav li:not(:last-child) {
+    margin-right: 20px;
+}
+    .springwave-gros {}
+    .portfolio-wrapper img {
+        -webkit-transform: scale(.7);-ms-transform: scale(.7);transform: scale(.7);
+}

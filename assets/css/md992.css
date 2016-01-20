@@ -1,0 +1,25 @@
+@media screen and (min-width: 992px){
+    aside.cta-quote span.quote {
+    font-size: 40px;
+    line-height: 50px;
+  }
+    #videodroite {
+    
+}
+.row.text-center .col-md-4 + .col-md-4 {
+ margin-top: 0px;
+}
+    a#focus-springwave {
+    font-size: 23px;
+    padding: 20px 18px;
+}
+        .numbers {
+        font-size: 60px;
+    }
+    h1.section-title {
+     letter-spacing: .6em;   
+    }
+    nav img {
+     width: 150px;   
+    }
+}

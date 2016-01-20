@@ -4,53 +4,6 @@
  * To use this theme you must have a license purchased at WrapBootstrap (https://wrapbootstrap.com)
  */
 /* Font used for the quotes */
-@font-face {
-    font-family: 'theanodidot-regular';
-    src: url('../fonts/anodidot/theanodidot-regular-webfont.eot');
-    src: url('../fonts/anodidot/theanodidot-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/anodidot/theanodidot-regular-webfont.woff2') format('woff2'),
-         url('../fonts/anodidot/theanodidot-regular-webfont.woff') format('woff'),
-         url('../fonts/anodidot/theanodidot-regular-webfont.ttf') format('truetype'),
-         url('../fonts/anodidot/theanodidot-regular-webfont.svg#theano_didotregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Font used for the rest */
-@font-face {
-    font-family: 'gotham-book-regular';
-    src: url('../fonts/gotham/gotham-book/gotham-book-webfont.eot');
-    src: url('../fonts/gotham/gotham-book/gotham-book-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/gotham/gotham-book/gotham-book-webfont.woff2') format('woff2'),
-         url('../fonts/gotham/gotham-book/gotham-book-webfont.woff') format('woff'),
-         url('../fonts/gotham/gotham-book/gotham-book-webfont.ttf') format('truetype'),
-         url('../fonts/gotham/gotham-book/gotham-book-webfont.svg#gotham_bookregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'gotham-xlight';
-    src: url('gotham-xlight-webfont.eot');
-    src: url('gotham-xlight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('gotham-xlight-webfont.woff2') format('woff2'),
-         url('gotham-xlight-webfont.woff') format('woff'),
-         url('gotham-xlight-webfont.ttf') format('truetype'),
-         url('gotham-xlight-webfont.svg#gotham_extralightregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'gotham-bold';
-    src: url('../fonts/gotham/gotham-bold/gotham-bold-webfont.eot');
-    src: url('../fonts/gotham/gotham-bold/gotham-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/gotham/gotham-bold/gotham-bold-webfont.woff2') format('woff2'),
-         url('../fonts/gotham/gotham-bold/gotham-bold-webfont.woff') format('woff'),
-         url('../fonts/gotham/gotham-bold/gotham-bold-webfont.ttf') format('truetype'),
-         url('../fonts/gotham/gotham-bold/gotham-bold-webfont.svg#gotham_boldregular') format('svg');
-    font-weight: normal;
-    font-style: bold;
-}
 html,
 body {
   height: 100%;
@@ -62,7 +15,6 @@ body {
   margin-top: 30px;
 }
 section {
-  padding: 50px 0;
 }
 .bg-gray {
   background-color: #f5f5f5;
@@ -73,7 +25,6 @@ section {
 }
 @media (max-width: 767px) {
   section {
-    padding: 75px 0;
   }
 }
 #springwave {
@@ -209,15 +160,13 @@ h6 {
   font-weight: 900;
   text-transform: uppercase;
 }
-@media (min-width: 481px) {
   h1 {
-    font-size: 43px;
-    letter-spacing: 25px;
+    font-size: 29px;
+    letter-spacing: .6em;
   }
   h2 {
     font-size: 50px;
   }
-}
 hr {
   max-width: 100px;
   border-top: 1px solid white;
@@ -234,18 +183,6 @@ hr.right {
 hr.colored {
   border-color: #3aaa35;
 }
-@media (min-width: 768px) {
-  hr {
-    max-width: 380px;
-    margin: 20px auto;
-  }
-  hr.left {
-    margin: 20px auto 20px 0;
-  }
-  hr.right {
-    margin: 20px 0 20px auto;
-  }
-}
 .text-primary {
   color: #3aaa35;
 }
@@ -259,14 +196,14 @@ hr.colored {
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #3aaa35;
-  background-color: white;
-  border-radius: 0;
+  /* background-color: white; */
+  /* border-radius: 0; */
 }
 .navbar-default {
-  background-color: #3aaa35;
+  background-color: #FFF;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: white;
+  background-color: #E6E6E6;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
@@ -283,6 +220,7 @@ hr.colored {
 .navbar-inverse {
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  opacity: 1;
 }
 .navbar-default .navbar-brand,
 .navbar-inverse .navbar-brand {
@@ -307,42 +245,6 @@ hr.colored {
 .navbar-default .navbar-nav li a:hover,
 .navbar-inverse .navbar-nav li a:hover {
   color: rgba(0, 0, 0, 0.5);
-}
-@media (min-width: 768px) {
-  .navbar-default .navbar-nav > .active > a,
-  .navbar-default .navbar-nav > .active > a:hover,
-  .navbar-default .navbar-nav > .active > a:focus,
-  .navbar-inverse .navbar-nav > .active > a,
-  .navbar-inverse .navbar-nav > .active > a:hover,
-  .navbar-inverse .navbar-nav > .active > a:focus {
-    border-radius: 5px;
-  }
-  .navbar-fixed-top.navbar-expanded {
-    padding: 10px 0;
-  }
-  .navbar-fixed-top.navbar-expanded li a {
-    color: white;
-  }
-  .navbar-fixed-top {
-    padding: 10px 0;
-    -webkit-transition: padding 0.5s;
-    -moz-transition: padding 0.5s;
-    transition: background 1s;
-  }
-  .navbar-fixed-top .navbar-brand:hover {
-    opacity: 0.5;
-  }
-  .navbar-fixed-top ul {
-    margin-left: 100px;
-  }
-  .navbar-fixed-top li {
-    margin-right: 30px;
-  }
-  .navbar-default.navbar-expanded,
-  .navbar-inverse.navbar-expanded {
-    background: transparent;
-    border: none;
-  }
 }
 .navbar a:focus {
   outline: none;
@@ -439,9 +341,7 @@ header#thanks button {
 
   background-color: transparent;
   color: white;
-  border: 2px solid white ;
-  width: 20%;
-}
+  border: 2px solid white;}
 header#thanks a {
   color: white;
 }
@@ -475,7 +375,6 @@ header .brand-name-subtext {
   font-weight: 200;
   text-transform: uppercase;
   position: absolute;
-  top: -40px;
   width: 100%;
 }
 header .brand-name-subtext p {
@@ -483,11 +382,7 @@ header .brand-name-subtext p {
   line-height: 35px;
 }
 header img {
-  max-width: 100px;
-  max-height: 100px;
-  position: absolute;
-  top: -130px;
-  left: 38%;
+  position: relative;
 }
 
 header .scroll-down {
@@ -507,35 +402,13 @@ header .scroll-down .btn {
   letter-spacing: normal;
   color: white;
   font-size: 30px;
-  /*-webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;*/
 }
-/*header .scroll-down .btn:hover {
-  color: rgba(255, 255, 255, 0.5);
-  border-color: rgba(255, 255, 255, 0.5);
-  outline: none;
-}*/
 header #watch-video a {
   color: white;
   font-size: 25px;
 }
 
-/*header #watch-video a:hover {
-  font-size: 27px;
-
-}*/
-
-
-/*header .btn-play .left {
-  position: absolute;
-  background: url('goutte-left.png');
-}
-header .btn-play .right {
-  position: absolute;
-  background: url('goutte-right.png');
-}*/
-section#manifeste-titre, section#metiers-titre, section#contact-titre, section#springwave-titre {
+section#manifeste-titre, section#metiers-titre, section#contact-titre, section#springwave-titre, section#notre-premier-produit {
   color: #3778bc;
 }
 
@@ -545,6 +418,7 @@ section#histoire-titre, section#equipe-titre, section#partenaires-titre {
 }
 section#about, section#metiers {
   padding: 0px;
+  overflow: hidden;
 }.container-fluid {
   padding-left: 0px;
   padding-right: 0px;
@@ -568,8 +442,9 @@ section#about div#haut-potentiel {
   color: white;
 }
 section#about div#haut-potentiel h2 {
-  font-weight: 300;
-  font-family: "Raleway";
+  font-family: "Montserrat";
+  font-size: 45px;
+  line-height: 72px;
 }
 
 section#about div#text-potentiel {
@@ -617,10 +492,16 @@ section#about div#text-enjeu {
 section#about div#text-enjeu h4 {
     font-weight: 100;
     font-size: 22px;
+    line-height: 24px;
+    font-family: "Montserrat";
+    text-align: left;
   }
 section#about div#text-enjeu p {
     font-weight: 100;
     letter-spacing: 0.5px;
+    font-family: "Montserrat";
+    font-size: 17px;
+    line-height: 24px;
   }
 section#metiers div#text-RD {
   padding: 10% 10%;
@@ -635,7 +516,6 @@ section#metiers div#text-RD p {
   width: 100%;
 }
 .caption-content {
-  /*padding: 10%;*/
   text-align: justify;
 }
 .year h3 {
@@ -665,61 +545,6 @@ aside#dixsept .history-title h3 {
   line-height: 50%;
 }
 
-@media (min-width: 768px) {
-  header {
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    background-attachment: scroll;
-  }
-  header .intro-content {
-    color: white;
-    text-align: center;
-    width: 50%;
-    margin: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-  header .brand-name {
-    font-size: 80px;
-    line-height: 80px;
-  }
-  header .brand-name-subtext {
-    font-size: 22px;
-    line-height: 35px;
-    font-style: 400;
-  }
-  header .author-quote {
-    color: white;
-    font-size: 18px;
-    line-height: 20px;
-  }
-  header .author-quote p {
-    font-size: 14px;
-    line-height: 1.5;
-    margin: 4px;
-  }
-  header .author-quote hr{
-    margin-top: 0px;
-    margin-bottom: 0px;
-    height: 0px;
-    border-top: 2px solid white;
-    width: 300px;
-  }
-  header img {
-    max-width: 200px;
-    max-height: 200px;
-  }
-}
-@media (min-width: 1025px) {
-  header {
-    /*background-attachment: fixed;*/
-  }
-}
 header.video .overlay {
   position: absolute;
   height: 100%;
@@ -734,11 +559,7 @@ header.video .intro-content {
 header.video .scroll-down {
   z-index: 999;
 }
-@media (min-width: 768px) {
-  header.video .overlay {
-    opacity: 0.5;
-  }
-}
+
 aside.cta-quote {
   color: white;
   background: no-repeat center center scroll;
@@ -747,7 +568,7 @@ aside.cta-quote {
   background-size: cover;
   -o-background-size: cover;
   /*padding: 100px 0;*/
-  height: 400px;
+  min-height: 400px;
   text-align: center;
 }
 
@@ -759,34 +580,11 @@ aside.cta-quote span.quote {
   font-weight: 300;
   text-align: left;
 }
-@media (min-width: 768px) {
-  aside.cta-quote {
-    background-attachment: scroll;
-    /*padding: 150px 0;*/
-  }
-  aside.cta-quote span.quote {
-    font-size: 36px;
-    line-height: 50px;
-  }
-}
-@media (min-width: 992px) {
-  aside.cta-quote {
-    /*padding: 300px 0;*/
-  }
-  aside.cta-quote span.quote {
-    font-size: 40px;
-    line-height: 50px;
-  }
-}
-@media (min-width: 1025px) {
-  aside.cta-quote {
-    background-attachment: fixed;
-  }
-}
 .testimonials {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  background-color: #FFF;
 }
 .testimonials h1 {
   color: #3778bc;
@@ -795,6 +593,9 @@ aside.cta-quote span.quote {
 .testimonials img {
   padding-left: 15%;
   padding-right: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -20px;
 }
 .testimonials h3 {
   padding: 3%;
@@ -1000,21 +801,7 @@ aside.cta-quote span.quote {
 .services .media .media-body ul li {
   margin-bottom: 10px;
 }
-@media (min-width: 390px) {
-  .services .media .media-body {
-    min-width: 260px;
-  }
-}
-@media (min-width: 992px) {
-  .services .media .media-body {
-    min-width: 193px;
-  }
-}
-@media (min-width: 1199px) {
-  .services .media .media-body {
-    min-width: 260px;
-  }
-}
+
 @media (min-width: 992px) {
   .services .media {
     margin-bottom: 0;
@@ -1035,20 +822,19 @@ aside.cta-quote span.quote {
   -o-background-size: cover;
   padding: 50px 55px;
   text-align: center;
-  height: 300px;
 }
 #chiffres {
   background-color: white;
-  height: 600px;
+  /* height: 600px; */
+  overflow: hidden;
+  padding: 0;
 }
 #chiffres .owl-wrapper-outer {
   height: 600px;
 }
-#chiffres .item {
-  height: 600px;
-} .numbers {
-  font-size: 80px;
-  font-family: "PT Sans Caption";
+#chiffres .item {background-size: cover;background-position: center;padding-top: 80px;padding-bottom: 160px;} .numbers {
+  font-size: 50px;
+  font-family: "Montserrat";
   letter-spacing: normal;
   margin-bottom: 30px;
 }
@@ -1058,6 +844,8 @@ aside.cta-quote span.quote {
   font-size: 17px;
   margin-bottom: 0px;
   text-align: center;
+  font-family: "Montserrat";
+  line-height: 27px;
 }
 
 #chiffres .item .section-title {
@@ -1138,8 +926,6 @@ aside.cta-quote span.quote {
 @media (min-width: 992px) {
   .portfolio-carousel .item {
     text-align: left;
-    height: 640px;
-    min-height: 100%;
   }
   .portfolio-carousel .item .portfolio-image {
     margin-top: 0;
@@ -1196,6 +982,8 @@ aside.cta-quote span.quote {
 }
 .portfolio-modal .modal-content img {
   /*margin: 30px auto;*/
+  margin-left: auto;
+  margin-right: auto;
 }
 .portfolio-modal .modal-content p {
   padding: 30% 0;
@@ -1292,7 +1080,7 @@ aside.cta-quote span.quote {
   overflow: hidden;
 }
 section#partenaires .portfoliolist .portfolio {
-  width: 20%;
+  /* width: 20%; */
   margin: 0%;
 }
 .portfoliolist .portfolio .portfolio-wrapper {
@@ -1300,11 +1088,11 @@ section#partenaires .portfoliolist .portfolio {
   position: relative !important;
   background: #222222;
   cursor: pointer;
-  width: 230px;
+  /* width: 230px; */
 }
 section#partenaires .portfoliolist .portfolio .portfolio-wrapper {
   background: white;
-  width: 200px;
+  /* width: 200px; */
 }
 section#partenaires .portfoliolist .portfolio .portfolio-wrapper img {
   -webkit-filter: grayscale(0);
@@ -1488,6 +1276,7 @@ footer.footer a:hover {
 }
 footer.footer p {
   font-size: 22px;
+  font-family: "Gotham";
 }
 footer.footer .contact-details {
   color: rgba(0, 0, 0, 0.7);
@@ -1648,3 +1437,6 @@ body.vintage .testimonials .testimonials-carousel .owl-controls .owl-prev,
 body.vintage .testimonials .testimonials-carousel .owl-controls .owl-next {
   line-height: 55px;
 }
+h1.augmentation:before {content: "+"}
+.intro-quote p {max-width: 760px;position: relative;margin-left: auto;margin-right: auto;}
+.intro-quote img {}

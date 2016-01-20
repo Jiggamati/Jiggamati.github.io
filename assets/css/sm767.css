@@ -1,0 +1,189 @@
+@media screen and (min-width: 767px){
+    .row-eq-heigt-sm
+{
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+}
+     hr {
+    max-width: 380px;
+    margin: 20px auto;
+  }
+  hr.left {
+    margin: 20px auto 20px 0;
+  }
+  hr.right {
+    margin: 20px 0 20px auto;
+  }
+      .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus,
+  .navbar-inverse .navbar-nav > .active > a,
+  .navbar-inverse .navbar-nav > .active > a:hover,
+  .navbar-inverse .navbar-nav > .active > a:focus {
+    border-radius: 5px;
+  }
+  .navbar-fixed-top.navbar-expanded {
+    padding: 10px 0;
+  }
+  .navbar-fixed-top.navbar-expanded li a {
+  }
+  .navbar-fixed-top {
+    padding: 10px 0;
+    -webkit-transition: padding 0.5s;
+    -moz-transition: padding 0.5s;
+    transition: background 1s;
+  }
+  .navbar-fixed-top .navbar-brand:hover {
+    opacity: 0.5;
+  }
+  .navbar-fixed-top ul {
+  }
+  .navbar-fixed-top li {
+  }
+  .navbar-default.navbar-expanded,
+  .navbar-inverse.navbar-expanded {
+    background: transparent;
+    border: none;
+  }
+  header .intro-content {
+    color: white;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  header .brand-name {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  header .brand-name-subtext {
+    font-size: 22px;
+    line-height: 35px;
+    font-style: 400;
+    text-align: center;
+  }
+  header .author-quote {
+    color: white;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  header .author-quote p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 4px;
+  }
+  header .author-quote hr{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 0px;
+    border-top: 2px solid white;
+    width: 300px;
+  }
+  header img {
+  }
+    aside.cta-quote {
+    background-attachment: scroll;
+    /*padding: 150px 0;*/
+  }
+  aside.cta-quote span.quote {
+    font-size: 36px;
+    line-height: 50px;
+  }
+    .header-texte {
+            font-size: 25px;
+            line-height: 40px;
+            }
+    #videodroite {
+    /* width: 100%; */
+    /* height: auto; */
+    position: absolute;
+    /* z-index: 100; */
+    width: 100%;
+    /* -webkit-transform: translate(-50%, -50%); */
+    /* transform: translate(-50%, -50%); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all ease-in-out .5s;
+    transition: none;
+    opacity: 0;
+}
+    h1 {
+        font-size: 43px;
+        letter-spacing: 25px;
+        } 
+    h1.section-title {
+    font-size: 43px;
+    line-height: 1.5em;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+    a#focus-springwave {
+    font-size: 11px;
+}
+    .numbers {
+        font-size: 70px;
+    }
+    .nh-titre h3 {font-size: 30px;}
+    #notre-histoire .container-fluid {padding-top: 80px; padding-bottom: 80px;}
+    
+    nav li {
+    display: inline-block;
+}
+nav li:first-child {
+    }
+.navbar-expanded img {
+    opacity: 0;
+    margin-left: -300px;
+}
+.navbar-default a:hover {
+ color:#3aaa35;   
+}
+.navbar-expanded a:hover {
+    color: #FFF;
+}
+    .logo-mobile {display: none;}
+    .navbar-nav>li {
+        float: none;
+        display: inline-block;
+    }
+    .navbar-nav {
+        
+    }
+    .navbar-default {
+        /* border-bottom: 1px solid; */
+        box-shadow: 0px 2px 8px rgba(0,0,0,.3);
+        }
+    .navbar-expanded {
+        box-shadow: none;}
+    .navbar-expanded a {
+ color: #FFF !important;
+}
+    .navbar-expanded li.logo {
+     margin-right: 0;
+    }
+    .navbar-expanded li.logo a {
+        padding: 0;
+    }
+    .navbar-default li a {
+        line-height: 50px;
+    }
+    .navbar-default * {
+     -webkit-transition: all ease-in-out 1s;transition: all ease-in-out 1s;   -webkit-transition-property: margin, padding, width;transition-property: margin, padding, width;
+    }
+    .navbar-default img {
+        -webkit-transition: all ease-in-out 1s;
+    transition: all ease-in-out 1s;
+    }
+    #video-texte {
+}
+    .drapeaux a {top: 30px;}
+}
