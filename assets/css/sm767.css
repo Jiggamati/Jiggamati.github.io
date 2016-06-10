@@ -28,6 +28,8 @@
     padding: 10px 0;
   }
   .navbar-fixed-top.navbar-expanded li a {
+  display: block;
+  width: 100%;
   }
   .navbar-fixed-top {
     padding: 10px 0;
@@ -175,6 +177,8 @@ nav li:first-child {
     }
     .navbar-default li a {
         line-height: 50px;
+        font-size: 14px;
+        padding: 10px 10px;
     }
     .navbar-default * {
      -webkit-transition: all ease-in-out 1s;transition: all ease-in-out 1s;   -webkit-transition-property: margin, padding, width;transition-property: margin, padding, width;

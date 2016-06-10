@@ -10,8 +10,8 @@
  margin-top: 0px;
 }
     a#focus-springwave {
-    font-size: 23px;
-    padding: 20px 18px;
+    font-size: 15px;
+    padding: 15px 18px;
 }
         .numbers {
         font-size: 60px;
@@ -22,4 +22,9 @@
     nav img {
      width: 150px;   
     }
+    .navbar-default li a {
+    line-height: 50px;
+    font-size: 16px;
+    padding: 10px 15px;
+}
 }

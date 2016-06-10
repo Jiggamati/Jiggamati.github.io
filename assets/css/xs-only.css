@@ -50,3 +50,14 @@ button.navbar-toggle.collapsed {
     padding-bottom: 30px;
     padding-top: 30px;
 }
+.dropdown-menu li a {
+    color: black !important;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+a.dropdown-toggle[aria-expanded="true"] {
+    color: #000 !important;
+}
