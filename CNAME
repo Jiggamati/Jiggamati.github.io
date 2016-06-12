@@ -1,1 +1,1 @@
-algama.fr
+$ echo "www.algama.fr" > source/CNAME
